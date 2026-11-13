@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f3a5a"/>
+      <stop offset="100%" stop-color="#0f1f3d"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield background -->
+  <path d="M60 4 L108 20 V60 C108 88 88 108 60 116 C32 108 12 88 12 60 V20 Z" fill="url(#navyGrad)"/>
+  <!-- Truck body -->
+  <rect x="32" y="48" width="40" height="24" rx="3" fill="#fff"/>
+  <rect x="72" y="52" width="16" height="20" rx="2" fill="url(#orangeGrad)"/>
+  <!-- Window -->
+  <rect x="74" y="54" width="12" height="8" rx="1" fill="#dae4f0"/>
+  <!-- Wheels -->
+  <circle cx="44" cy="76" r="7" fill="#1f2937"/>
+  <circle cx="44" cy="76" r="3" fill="#9ca3af"/>
+  <circle cx="76" cy="76" r="7" fill="#1f2937"/>
+  <circle cx="76" cy="76" r="3" fill="#9ca3af"/>
+  <!-- V monogram -->
+  <text x="60" y="44" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="url(#orangeGrad)" text-anchor="middle">V</text>
+  <!-- Bottom bar -->
+  <rect x="28" y="84" width="64" height="3" rx="1.5" fill="url(#orangeGrad)"/>
+  <text x="60" y="100" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle" letter-spacing="0.5">PACKERS &amp; MOVERS</text>
+</svg>

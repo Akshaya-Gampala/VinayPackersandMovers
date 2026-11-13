@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-navy-900 antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .section-pad {
+    @apply py-16 md:py-24;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-orange-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-orange-500/30 transition-all duration-300 hover:bg-orange-600 hover:shadow-xl hover:shadow-orange-500/40 hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-navy {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-navy-800 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-navy-900/20 transition-all duration-300 hover:bg-navy-900 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border-2 border-white/80 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-white hover:text-navy-900;
+  }
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-green-500/30 transition-all duration-300 hover:bg-[#1ebe57] hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .card {
+    @apply rounded-2xl bg-white shadow-sm ring-1 ring-navy-100/60 transition-all duration-300;
+  }
+  .section-title {
+    @apply text-3xl font-bold text-navy-900 md:text-4xl;
+  }
+  .section-subtitle {
+    @apply mt-3 text-base text-navy-500 md:text-lg;
+  }
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f4f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #305682;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1f3a5a;
+}
